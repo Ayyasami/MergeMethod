@@ -5,9 +5,7 @@ RSpec.describe 'User squashes a merge request', :js do
   let(:project) { create(:project, :repository) }
   let(:source_branch) { 'csv' }
   let(:protected_source_branch) { false }
-
   let!(:original_head) { project.repository.commit('master') }
-
   shared_examples 'squash' do
     it 'squashes the commits into a single commit, and adds a merge commit', :sidekiq_might_not_need_inline do
       expect(page).to have_content('Merged')
