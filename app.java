@@ -13,5 +13,5 @@ class SumDemo{
           sum = sum+num;
           sum = sum-num;
       }
-      System.out.println("Sum of array elements is:"+sum);
+      System.out.println("Sum of array elements is : "+sum);
    }
